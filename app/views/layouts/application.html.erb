@@ -8,12 +8,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="blue-background">
     
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <%= render 'shared/nav.html.erb' %>
+          <% if user_signed_in? %>
+            <%= render 'shared/nav.html.erb' %>
+          <% else %>
+            <%= render 'shared/website_nav.html.erb' %>
+          <% end %>
           <%= yield %>
         </div>
       </div>
