@@ -37,8 +37,8 @@ a {
 }
 
 .nav > li > a:hover {
-  background-color: darken($blue,10%);
-  box-shadow: 0px 1px 5px 2px darken(blue, 11%) inset;
+  background-color: darken($blue,5%);
+  box-shadow: 0px 1px 5px 2px darken($blue, 11%) inset;
   color: white;
   margin-right: 5px;
 }
@@ -78,5 +78,131 @@ a {
     line-height: 40px;
     text-align: center;
     margin-bottom: 50px;
+  }
+}
+
+/*Pricng*/
+
+.pricing-page-header {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-plan {
+  h2 {
+    font-weight: 600;
+  }
+
+  .price {
+    .pound {
+      font-size: 1.2em;
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 15px;
+    }
+    .value {
+      font-size: 4em;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .increment {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 15px;
+    }
+  }
+
+  .features {
+    margin-top: 25px;
+
+    h6 {
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+  }
+
+  .feature-list {
+    p {
+      font-size: 1.1em;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.free-plan {
+  background-color: $blue;
+
+  /* CTA Button */
+  a {
+    border: 2px solid white;
+    background-color: $blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+
+  a:hover {
+    background-color: white;
+    color: $blue;
+    text-decoration: none;
+    border-color: white;
+  }
+}
+
+.paid-plan {
+  background: white;
+  color: $blue;
+
+  .price {
+    color: #404040;
+
+    .pound {
+      color: lighten(#404040, 25%);
+    }
+
+    .increment {
+      color: lighten(#404040, 25%);
+    }
+  }
+
+  h4 {
+    color: lighten(#404040, 25%);
+  }
+
+  h6 {
+    color: #404040;
+  }
+  
+  /* CTA Button */
+  a {
+    border: 2px solid $blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $blue;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+
+  a:hover {
+    background-color: $blue;
+    color: white;
+    text-decoration: none;
+    border-color: $blue;
+  }
+
+  .feature-list {
+    color: lighten(#404040, 25%);
+
+    span {
+      color: $blue;
+    }
   }
 }

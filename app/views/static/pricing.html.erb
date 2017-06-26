@@ -1,1 +1,77 @@
-<p>Pricing</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-sm-offset-2">
+      <h2 class="pricing-page-header">Invest an a better way to book holiday and overtime.</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="jumbotron pricing-plan free-plan">
+        <h2>Free Plan</h2>
+        <h4>For teams than want to try out Undertime for as long as they like.</h4>
+        <br>
+        <div class="price">
+          <span class="pound">
+            £
+          </span>
+          <span class="value">
+            0
+          </span>
+        </div>
+        <br>
+
+        <%= link_to "Get started", new_user_registration_path,  class: 'btn btn-default', role: 'button' %>
+
+        <div class="features">
+          <h6>Free inludes the basics like: </h6>
+          <div class="feature-list">
+            <p>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Feature 1</p>
+            <p>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Feature 2</p>
+            <p>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Feature 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron pricing-plan paid-plan">
+        <h2>Paid Plan</h2>
+        <h4>For teams who want to make Undertime their central hub for overtime and holidays.</h4>
+        <br>
+        <div class="price">
+          <span class="pound">
+            £
+          </span>
+          <span class="value">
+            1.00
+          </span>
+          <span class="increment">
+            per user / per month
+          </span>
+        </div>
+        <br>
+
+        <%= link_to "Get started", new_user_registration_path,  class: 'btn btn-default', role: 'button' %>
+        <div class="features">
+          <h6>Includes everything in free, plus: </h6>
+          <div class="feature-list">
+            <p>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Feature 3</p>
+            <p>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Feature 4</p>
+            <p>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            Feature 5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
