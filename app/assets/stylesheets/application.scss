@@ -245,3 +245,20 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield;
 }
+
+.jumbotron-links {
+  padding: 25px;
+  text-align: center;
+
+  .jumbotron-link {
+    line-height: 25px;
+    text-align: center;
+    font-weight: 600;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+
