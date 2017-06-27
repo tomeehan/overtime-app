@@ -16,7 +16,7 @@ describe 'navigate' do
     end
 
     it 'has a title of Posts' do
-      expect(page).to have_content(/Posts/)
+      expect(page).to have_content(/Time/)
     end
 
     it 'has a list of posts' do
