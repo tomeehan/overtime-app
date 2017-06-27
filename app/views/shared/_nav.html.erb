@@ -1,12 +1,18 @@
 <div class="logo">
-  <h1>Time Tracker</h1>
+  <nav class="navbar">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        <img src="/undertime-logo.png" alt="" style="width: 200px;">
+      </a>
+    </div>
+  </nav>
 </div>
 
 <ul class="nav nav-tabs custom-nav">
   <li class="<%= active?(root_path) %>">
     <%= link_to "Home", root_path %>
   </li>
-  <li class="<%= active?(posts_path) %>">
+  <li class="<%= active?(new_post_path) %>">
     <%= link_to "Add new entry", new_post_path, id: "new_post_from_nav" %>
   </li>
   <li class="<%= active?(posts_path) %>">
