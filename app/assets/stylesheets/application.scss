@@ -176,6 +176,8 @@ a {
 }
 
 .paid-plan {
+  @include blue-box-shadow;
+
   background: white;
   color: $blue;
 
