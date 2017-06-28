@@ -19,6 +19,9 @@
             <%= render 'shared/website_nav.html.erb' %>
           <% end %>
           <%= yield %>
+          <% unless user_signed_in? %>
+            <%= render 'shared/footer.html.erb' %>
+          <% end %>
         </div>
       </div>
     </div>
