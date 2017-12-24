@@ -20,6 +20,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'gritter', "1.2.0"
 gem 'administrate'
 gem 'bourbon'
+gem 'haml-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
